@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  color: #40514E;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+h3 {
+  color: #11999E;
+}
+
+a {
+  color: #11999E;
+  text-decoration: none;
+}
+
+
+/* Jumbotron Part */
+#header1 {
+  display: inline;
+}
+
+#jumbotron {
+  background-color: #e4f9f5;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 562.5%;
+  margin: 0 auto 0 auto;
+  padding-top: 100px;
+  color: #66BFBF;
+  line-height: 2;
+}
+
+span {
+  text-decoration: underline;
+}
+
+.cloud1 {
+  position: absolute;
+  right: 250px;
+  top: 100px;
+}
+
+.cloud2 {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.sun {
+  width: 100px;
+  opacity: 0.5;
+}
+
+.sun:hover {
+  opacity: 1;
+}
+
+nav {
+  background-color: #e4f9f5;
+  padding: 5px;
+  text-align: right;
+  position: sticky;
+  overflow: auto;
+  top: 0;
+}
+
+nav a {
+  color: gray;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.navList {
+  display: inline;
+  list-style-type: none;
+  margin: 20px;
+  font-size: 18px;
+}
+
+
+
+/* Aside part */
+aside {
+  float: left;
+  width: 25%;
+}
+
+#profile img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+#profile h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+figcaption {
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+table {
+  margin: 0 auto;
+}
+
+
+/* =====Main part====== */
+main {
+  overflow: auto;
+  padding: 20px;
+}
+
+.rightSide {
+  float: right;
+  width: 75%;
+  padding-left: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.flex-container img {
+  /* border-radius:50%; */
+  width: 25%;
+  border: 1px solid #66BFBF;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+  ;
+}
+
+.content-row {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 2;
+  flex-grow: 1;
+}
+
+#content h2 {
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-img1 {
+  float: left;
+  margin-right: 30px;
+}
+
+.content-img2 {
+  float: right;
+  margin-left: 30px;
+}
+
+#contact-text {
+  width: 40%;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+
+/* ==========FOOTER PART========== */
+footer {
+  background: #66BFBF;
+  padding: 50px 0;
+}
+
+#ig {
+  margin: 0 40px;
+}
+
+footer p {
+  color: #EAF6F6;
+}
+
+footer a:hover {
+  font-weight: bold;
+}
+
+
+/* ==========media Query============== */
+@media screen and (max-width: 1000px) {
+
+  aside,
+  .rightSide {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+  }
+
+  h1 {
+    padding-top: 0;
+  }
+
+  .cloud1 {
+    position: static;
+    right: auto;
+    top: auto;
+  }
+
+  .cloud2 {
+    position: static;
+    left: auto;
+    bottom: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #jumbotron h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #content {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .mountai {
+    width: 95%;
+  }
+}
